@@ -2,6 +2,8 @@
 
 Simple books list web for Timedoor Backend Programming test
 
+Create using Laravel framework 10.2.0 and PHP 8.2.0
+
 ### Installation
 
 * create database named "books_db"
