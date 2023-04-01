@@ -8,13 +8,15 @@
   
   /* Float four columns side by side */
   .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
+    /* float: left;
+    width: 25%; */
+    padding: 10px;  
+}
   
   /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
+  /* .row {
+    margin: 0 -5px;
+} */
   
   /* Clear floats after the columns */
   .row:after {
@@ -31,15 +33,24 @@
     background-color: #f1f1f1;
   }
 
-  .card-img{
-    width: auto;
+  .card-img-top{
+    padding: 5px;
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+    
+  /* @media screen and (max-width: 1000px) {
+    .column {
+      width: 30%;
+      display: block;
+      margin: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
     .column {
       width: 100%;
       display: block;
-      margin-bottom: 20px;
+      margin: 20px;
     }
-  }
+  } */

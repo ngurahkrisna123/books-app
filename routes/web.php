@@ -15,11 +15,21 @@ use App\Http\Controllers\BooksController;
 */
 
 Route::get('',[BooksController::class, 'index']);
+Route::get('/books',[BooksController::class, 'booksGallery']);
 Route::get('/search',[BooksController::class, 'search']);
 Route::get('/showsearch',[BooksController::class, 'showsearch']);
 Route::get('/topauthor',[BooksController::class, 'topAuthor']);
+
 Route::get('/rating',[BooksController::class, 'rating']);
-// Route::get('/ratingss',[BooksController::class, 'ratingss']);
 Route::post('/insertrating',[BooksController::class, 'insertRating']);
+
+Route::get('/addbook',[BooksController::class, 'addBooks']);
+Route::post('/insertbook',[BooksController::class, 'insertBooks']);
+
+Route::get('/editbook/{id}',[BooksController::class, 'editBooks']);
+Route::post('/updatebook/{id}',[BooksController::class, 'updateBooks']);
+
+Route::get('/deletebook/{id}',[BooksController::class, 'deleteBooks']);
+
 
 

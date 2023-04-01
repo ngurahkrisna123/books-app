@@ -18,11 +18,11 @@ class RatingSeeder extends Seeder
         //
         $faker = Faker::create('Lorem');
 
-        for ($i=0; $i < 50000; $i++) { 
+        for ($i=0; $i < 500; $i++) { 
             # code...
             DB::table('rating')->insert([
                 
-                'books_id' => $faker->numberBetween(1,10000),
+                'books_id' => $faker->numberBetween(1,100),
                 'rating' =>$faker->numberBetween(1,10)
             ]);
 

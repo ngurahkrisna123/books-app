@@ -17,7 +17,7 @@ class CategorySeeder extends Seeder
         //
         $faker = Faker::create('Lorem');
 
-        for ($i=0; $i < 300; $i++) { 
+        for ($i=0; $i < 10; $i++) { 
             # code...
             DB::table('category')->insert(['category' => $faker->word]);
 
