@@ -17,12 +17,13 @@ class BooksSeeder extends Seeder
         //
         $faker = Faker::create('Lorem');
 
-        for ($i=0; $i < 10000; $i++) { 
+        for ($i=0; $i < 100; $i++) { 
             # code...
             DB::table('books')->insert([
                 'booksName' => $faker->sentence($nbWords = 2, $variableNbWords = true),
-                'category_id' => $faker->numberBetween(1,300),
-                'author_id' =>$faker->numberBetween(1,100)
+                'booksImage' =>$faker->image('public/storage/images',640,480,null,false),
+                'category_id' => $faker->numberBetween(1,10),
+                'author_id' =>$faker->numberBetween(1,50)
             ]);
 
         }
